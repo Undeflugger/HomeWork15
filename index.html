@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Registration</title>
+</head>
+<body>
+<div class="container-fluid main-block">
+    <div class="container d-flex">
+        <div class="category">
+            <p>Laptops & Computers</p>
+            <p>Mobile & TV</p>
+            <p>Household appliances</p>
+            <p>Tools</p>
+        </div>
+        <div class="d-flex catalog">
+            <div class="laptops" style = "display: none">
+                <p>Acer Aspire</p>
+                <p>Asus S500MC-5114000370</p>
+                <p>28" Samsung Odyssey G7</p>
+            </div>
+            <div class="mobile" style="display: none">
+                <p>Apple iPhone 13</p>
+                <p>Samsung S22 ULTRA</p>
+                <p>LG 45" Ultra</p>
+            </div>
+            <div class="household" style="display: none">
+                <p>Refridgerator</p>
+                <p>Wosher</p>
+                <p>Mixer</p>
+            </div>
+            <div class="tools" style="display: none">
+                <p>Drill</p>
+                <p>Grinder tool</p>
+                <p>Saw</p>
+            </div>
+        </div>
+        <div class="items" style="display: none">
+            <h3 id="h3"></h3>
+            <p id="p"></p>
+            <span id="span"></span>
+            <button class="btn btn-lg btn-success ms-2" id="button" type="submit">BUY</button>
+        </div>
+
+    </div>
+    <div style="display: none;" id="clientInfo" class="container">
+        <form id = "form">
+            <div class="d-flex flex-column" style="width: 500px;">
+                <input class="formInp" type="text" name="name" required placeholder="Name" >
+                <input class="formInp" type="text" name="surname" required placeholder="Surname">
+                <input class="formInp" type="text" name="father" required placeholder="Name Father">
+                <div>
+                    <select id="country" class="formInp">
+                        <option selected disabled>City</option>
+                        <option value="Kyiv">Kyiv</option>
+                        <option value="Lviv">Lviv</option>
+                        <option value="London">London</option>
+                    </select>
+
+                    <select id="count" class="formInp">
+                        <option selected disabled>Count</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <textarea class="formInp" name="message" required placeholder="Message"></textarea>
+                <button type="submit" id="confirm" class="btn btn-lg btn-success my-2">Confirm</button>
+            </div>
+        </form>
+    </div>
+    <div class="container" id="order" style="display: none; max-width: 500px;">
+
+    </div>
+    <div class="basket">
+        <button id="my-orders" class="btn btn-lg btn-outline-success" type="button"><i class="bi bi-basket"></i></button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

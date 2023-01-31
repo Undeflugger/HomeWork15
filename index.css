@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-block{
+    background: #B0C4DE;
+    height: 100vh;
+}
+
+.category{
+    padding-top: 35px;
+    width: 210px;
+}
+
+.catalog{
+    padding-top: 35px;
+    margin-left: 50px;
+    width: 220px;
+}
+
+.items{
+    padding-top: 27px;
+    margin-left: 10px;
+}
+
+.category p{
+    font-size: 19px;
+    color: #141212;
+    padding-bottom: 10px;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+.category p:hover{
+    font-size: 21px;
+    color: #4B0082;
+    transition: all 0.4s;
+}
+
+.laptops p, .mobile p, .household p, .tools p{
+    font-size: 16px;
+    color: #141212;
+    margin-bottom: 10px;
+    cursor: pointer;
+    line-height: 18px;
+}
+
+.laptops p:hover, .mobile p:hover, .household p:hover, .tools p:hover{
+    font-size: 18px;
+    color: #4B0082;
+    transition: all 0.4s;
+}
+
+#clientInfo{
+    display: none;
+    background: gainsboro;
+    border-radius: 8px;
+    padding: 10px;
+    width: 520px;
+}
+
+.formInp{
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0;
+}
+
+.basket{
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+
+
+
